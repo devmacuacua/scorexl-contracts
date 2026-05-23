@@ -5,5 +5,6 @@ import java.util.List;
 public record EngineAnalysisResponse(
         Long fixtureId,
         String engine,
-        List<MarketOpportunity> opportunities
+        List<MarketOpportunity> opportunities,
+        EngineAnalysisDebug debug
 ) {}
