@@ -1,7 +1,6 @@
 package com.scorexl.contracts.engine;
 
 import java.math.BigDecimal;
-
 public record OpportunityDebug(
         String definitionLabel,
         String rawMarket,
@@ -21,6 +20,8 @@ public record OpportunityDebug(
         BigDecimal minimumValuePercentage,
         BigDecimal minimumExpectedValue,
 
-        String decisionReason
+        String decisionReason,
+
+        ProbabilityBreakdown probabilityBreakdown
 ) {
 }

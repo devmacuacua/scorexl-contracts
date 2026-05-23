@@ -21,6 +21,8 @@ public record RejectionDebug(
         BigDecimal minimumValuePercentage,
         BigDecimal minimumExpectedValue,
 
-        String rejectionReason
+        String rejectionReason,
+        
+        ProbabilityBreakdown probabilityBreakdown
 ) {
 }
