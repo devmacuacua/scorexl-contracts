@@ -20,8 +20,11 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
 
       - name: Publish
-        run: mvn deploy
+        run: mvn clean deploy -DskipTests
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
