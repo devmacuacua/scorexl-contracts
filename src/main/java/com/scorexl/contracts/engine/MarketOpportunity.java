@@ -16,5 +16,6 @@ public record MarketOpportunity(
         BigDecimal expectedValue,
         BigDecimal recommendedStake,
         String tier,
-        String decision
+        String decision,
+        OpportunityDebug debug
 ) {}
