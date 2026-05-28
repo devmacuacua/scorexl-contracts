@@ -9,5 +9,15 @@ import java.util.List;
 public record EngineAnalysisRequest(
         FixtureSnapshot fixture,
         ProbabilitySnapshot probabilities,
-        List<OddSnapshot> odds
-) {}
+        List<OddSnapshot> odds,
+        MatchContext context
+) {
+    /** Backwards-compatible constructor — engines that don't yet use context get MatchContext.empty() */
+    public EngineAnalysisRequest(
+            FixtureSnapshot fixture,
+            ProbabilitySnapshot probabilities,
+            List<OddSnapshot> odds
+    ) {
+        this(fixture, probabilities, odds, MatchContext.empty());
+    }
+}
