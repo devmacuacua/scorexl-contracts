@@ -5,5 +5,9 @@ public enum MarketType {
     HANDICAP,
     OVER_UNDER,
     BTTS,
-    CORNERS
+    CORNERS,
+    CORRECT_SCORE,
+    DOUBLE_CHANCE,
+    FIRST_HALF_WINNER,
+    SECOND_HALF_WINNER
 }
