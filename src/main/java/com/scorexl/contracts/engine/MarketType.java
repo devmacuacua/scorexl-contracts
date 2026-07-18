@@ -10,5 +10,8 @@ public enum MarketType {
     DOUBLE_CHANCE,
     FIRST_HALF_WINNER,
     SECOND_HALF_WINNER,
-    TEAM_OVER_GOALS
+    TEAM_OVER_GOALS,
+    CARDS,
+    SHOTS_ON_TARGET,
+    FOULS
 }
